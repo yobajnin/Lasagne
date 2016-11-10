@@ -112,6 +112,9 @@
 
     DropoutLayer
     dropout
+    dropout_channels
+    spatial_dropout
+    dropout_locations
     GaussianNoiseLayer
 
 
@@ -167,9 +170,12 @@
 
     NonlinearityLayer
     BiasLayer
+    ScaleLayer
+    standardize
     ExpressionLayer
     InverseLayer
     TransformerLayer
+    TPSTransformerLayer
     ParametricRectifierLayer
     prelu
     RandomizedRectifierLayer
@@ -210,4 +216,6 @@
     dnn.MaxPool3DDNNLayer
     dnn.Pool3DDNNLayer
     dnn.SpatialPyramidPoolingDNNLayer
+    dnn.BatchNormDNNLayer
+    dnn.batch_norm_dnn
 
